@@ -22,7 +22,7 @@ import sys
 from tqdm import tqdm
 
 if len(sys.argv)<=1:
-        print "Specify batch number"
+        print("Specify batch number")
         sys.exit(1)
 
 # original_path = os.path.dirname(os.path.realpath(__file__))
