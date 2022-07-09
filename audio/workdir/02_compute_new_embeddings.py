@@ -71,7 +71,6 @@ for combination in tqdm(combinations):
       done.add(meta)
       
       name = description_to_name(meta)
-      print(name)
       #	reshape array
       interpolated = np.reshape(interpolated, (1,) + interpolated.shape)
       
