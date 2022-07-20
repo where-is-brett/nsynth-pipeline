@@ -43,7 +43,7 @@ files = [f for f in files if '.wav' in f]
 
 print ("Normalising input WAVs")
 for fpath in tqdm(files):
-  audio, sr = librosa.core.load(os.path.join(original_path, fpath), sr=64000)
+  audio, sr = librosa.core.load(os.path.join(original_path, fpath), sr=44100)
   d = audio[1:] - audio[:-1]
   d_thresh = np.where(np.abs(d) > 1.0)[0]
   clicks = [
